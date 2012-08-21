@@ -106,7 +106,7 @@ class WordpressPageContentItem extends ExternalContentItem {
 		return $fields;
 	}
 
-	public function stageChildren() {
+	public function stageChildren($showAll = false) {
 		return $this->source->getPagesByParentId($this->externalId);
 	}
 

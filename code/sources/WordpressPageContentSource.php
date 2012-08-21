@@ -25,7 +25,7 @@ class WordpressPageContentSource extends WordpressContentSource {
 		}
 	}
 
-	public function stageChildren() {
+	public function stageChildren($showAll = false) {
 		return $this->getPagesByParentId(0);
 	}
 
@@ -78,7 +78,7 @@ class WordpressPageContentSource extends WordpressContentSource {
 		return $result;
 	}
 
-	public function canCreate() {
+	public function canCreate($member = null) {
 		return true;
 	}
 

@@ -25,7 +25,7 @@ class WordpressPostContentSource extends WordpressContentSource {
 		}
 	}
 
-	public function stageChildren() {
+	public function stageChildren($showAll = false) {
 		$result = new DataObjectSet();
 
 		if (!$this->isValid()) {
@@ -80,7 +80,7 @@ class WordpressPostContentSource extends WordpressContentSource {
 		return $fields;
 	}
 
-	public function canCreate() {
+	public function canCreate($member = null) {
 		return true;
 	}
 

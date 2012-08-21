@@ -108,7 +108,7 @@ class WordpressPostContentItem extends ExternalContentItem {
 		return $fields;
 	}
 
-	public function stageChildren() {
+	public function stageChildren($showAll = false) {
 		return new DataObjectSet();
 	}
 
